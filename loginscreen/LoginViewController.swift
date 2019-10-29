@@ -17,8 +17,14 @@ class LoginViewController: UIViewController {
     
     
     @IBAction func buttonLogin(_ sender: UIButton) {
-        let name = txtUserName.text!
-        print("Hello \(name)")
+        let nameS = txtUserName.text!
+        print("Hello \(nameS)")
+        
+        let sb = UIStoryboard(name: "Main", bundle: nil)
+        let homeVC = sb.instantiateViewController(identifier: "homeVC") as HomeViewController
+        homeVC.name = nameS
+//        self.present(homeVC, animated: true, completion: nil)
+        navigationController?.pushViewController(homeVC, animated: true)
     }
     
     @IBAction func buttonSignIn(_ sender: UIButton)

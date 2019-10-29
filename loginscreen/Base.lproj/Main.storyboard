@@ -132,7 +132,7 @@
         <!--Home View Controller-->
         <scene sceneID="14t-jv-WaB">
             <objects>
-                <viewController id="MXv-gd-FNL" customClass="HomeViewController" customModule="loginscreen" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="homeVC" id="MXv-gd-FNL" customClass="HomeViewController" customModule="loginscreen" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="a4w-Xk-KEW">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -148,6 +148,9 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="B8m-aj-7z6"/>
                     </view>
+                    <connections>
+                        <outlet property="labelWelcome" destination="Fw7-Gx-P1a" id="paH-eZ-jTO"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Rkb-YM-2Ux" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -308,14 +311,6 @@
                 <exit id="GcL-FK-NTi" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="1804.3478260869567" y="113.83928571428571"/>
-        </scene>
-        <!--View Controller-->
-        <scene sceneID="v9V-wa-OXG">
-            <objects>
-                <viewController id="LNa-Aj-Nso" sceneMemberID="viewController"/>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="UIA-1g-368" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="137.68115942028987" y="-558.48214285714278"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="5mf-J5-e9A">

@@ -10,12 +10,35 @@ import UIKit
 
 class HomeViewController: UIViewController {
 
+    @IBOutlet weak var labelWelcome: UILabel!
+    public var name : String?
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        if let nm = name
+        {
+            labelWelcome.text="Welcome \(name!)"
+        }
+        
+        navigationItem.hidesBackButton=true
+        allLogOutButton()
 
         // Do any additional setup after loading the view.
     }
     
+    private func allLogOutButton()
+    {
+        let btnLogOut = UIBarButtonItem(title: "Logout", style: .done, target: self, action: #selector(HomeViewController.logout(sender:)))
+//        navigationItem.leftBarButtonItem = btnLogOut
+        navigationItem.leftBarButtonItems = [btnLogOut,btnLogOut]
+
+    }
+    
+    
+    @objc func logout(sender: UIBarButtonItem)
+    {
+        navigationController?.popViewController(animated: true)
+    }
 
     /*
     // MARK: - Navigation
