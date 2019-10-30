@@ -68,6 +68,9 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="onTintColor" systemColor="linkColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <color key="thumbTintColor" systemColor="systemOrangeColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <connections>
+                                    <action selector="remember:" destination="BYZ-38-t0r" eventType="valueChanged" id="Qco-rA-x3V"/>
+                                </connections>
                             </switch>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="on off value" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fRc-aR-jPg">
                                 <rect key="frame" x="264" y="391" width="111" height="21"/>
@@ -121,6 +124,8 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
+                        <outlet property="labelRemember" destination="fRc-aR-jPg" id="OMp-Pu-ZVg"/>
+                        <outlet property="rememberMeButton" destination="MZF-39-22r" id="ThX-4X-ed3"/>
                         <outlet property="txtUserName" destination="Qck-zC-ojd" id="9QH-Km-zBF"/>
                         <outlet property="txtUserPassword" destination="I4P-Hs-8yE" id="cac-2d-OPT"/>
                     </connections>

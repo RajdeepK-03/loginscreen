@@ -17,7 +17,7 @@ class HomeViewController: UIViewController {
         
         if let nm = name
         {
-            labelWelcome.text="Welcome \(name!)"
+            labelWelcome.text="Welcome \(nm)"
         }
         
         navigationItem.hidesBackButton=true
